@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moneytracker/static/css/main.9af31924.chunk.css",
-    "main.js": "/moneytracker/static/js/main.ffe8bb2c.chunk.js",
-    "main.js.map": "/moneytracker/static/js/main.ffe8bb2c.chunk.js.map",
+    "main.js": "/moneytracker/static/js/main.e297e6a5.chunk.js",
+    "main.js.map": "/moneytracker/static/js/main.e297e6a5.chunk.js.map",
     "runtime-main.js": "/moneytracker/static/js/runtime-main.62da18d6.js",
     "runtime-main.js.map": "/moneytracker/static/js/runtime-main.62da18d6.js.map",
     "static/css/2.0b17412e.chunk.css": "/moneytracker/static/css/2.0b17412e.chunk.css",
     "static/js/2.289e025b.chunk.js": "/moneytracker/static/js/2.289e025b.chunk.js",
     "static/js/2.289e025b.chunk.js.map": "/moneytracker/static/js/2.289e025b.chunk.js.map",
     "index.html": "/moneytracker/index.html",
-    "precache-manifest.8eee3f2a63319040ce677d481397a1d5.js": "/moneytracker/precache-manifest.8eee3f2a63319040ce677d481397a1d5.js",
+    "precache-manifest.ab10ab9a6eaf3bb934f043ada769f6e3.js": "/moneytracker/precache-manifest.ab10ab9a6eaf3bb934f043ada769f6e3.js",
     "service-worker.js": "/moneytracker/service-worker.js",
     "static/css/2.0b17412e.chunk.css.map": "/moneytracker/static/css/2.0b17412e.chunk.css.map",
     "static/css/main.9af31924.chunk.css.map": "/moneytracker/static/css/main.9af31924.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.0b17412e.chunk.css",
     "static/js/2.289e025b.chunk.js",
     "static/css/main.9af31924.chunk.css",
-    "static/js/main.ffe8bb2c.chunk.js"
+    "static/js/main.e297e6a5.chunk.js"
   ]
 }
