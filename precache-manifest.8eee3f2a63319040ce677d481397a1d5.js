@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83779a6f6005f1caa99af779fd6f294d",
+    "revision": "c6f2958011dda026b564f05be8260e33",
     "url": "/moneytracker/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moneytracker/static/css/2.0b17412e.chunk.css"
   },
   {
-    "revision": "8abbda47678ae2b7d11c",
+    "revision": "74cce4601c671017170c",
     "url": "/moneytracker/static/css/main.9af31924.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moneytracker/static/js/2.289e025b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8abbda47678ae2b7d11c",
-    "url": "/moneytracker/static/js/main.41632e3f.chunk.js"
+    "revision": "74cce4601c671017170c",
+    "url": "/moneytracker/static/js/main.ffe8bb2c.chunk.js"
   },
   {
     "revision": "386a55bc232cf50d7856",
