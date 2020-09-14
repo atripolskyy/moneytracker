@@ -17,10 +17,6 @@ class Content extends Component {
     open: false,
     charges: JSON.parse(localStorage.getItem("charges")),
     incomes: JSON.parse(localStorage.getItem("incomes")),
-    total: 0,
-    category: null,
-    date: null,
-    description: '',
   }
 
   handleShowForm = () => {
@@ -55,6 +51,7 @@ class Content extends Component {
             </Grid>
 
             <DataTable data={this.state.charges}/>
+
           </Grid>
         </Container>
 
@@ -66,7 +63,7 @@ class Content extends Component {
         >
           <div className={s.formWrapper}>
 
-            <Form total={this.state.total}/>
+            <Form />
 
           </div>
         </Drawer>
