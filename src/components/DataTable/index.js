@@ -24,7 +24,9 @@ class DataTable extends Component {
   }
 
   render() {
-    const rows = this.props.data.map(item => this.createData(item.category, item.description, item.date, item.total, '...'));
+    const rows = this.props.data !== null ?
+      this.props.data.map(item => this.createData(item.category, item.description, item.date, item.total, '...'))
+      : [];
 
     return (
       <Grid item xs={12}>
