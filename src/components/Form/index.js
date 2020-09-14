@@ -10,6 +10,14 @@ import Button from '@material-ui/core/Button';
 import s from './Form.module.scss';
 
 class Form extends Component {
+  state = {
+    charges: JSON.parse(localStorage.getItem("charges")) === null ? [] : JSON.parse(localStorage.getItem("charges")),
+    total: '',
+    category: null,
+    date: null,
+    description: '',
+  }
+
   handleChangeTotal = (e) => {
     const inputValue = e.target.value;
 
@@ -19,7 +27,7 @@ class Form extends Component {
       });
     } else {
       this.setState({
-        total: 0,
+        total: '',
       });
     }
   }
@@ -43,12 +51,11 @@ class Form extends Component {
   }
 
   render() {
-    const {total} = this.props;
     return (
       <>
         <Typography variant="h5" gutterBottom>
-            New charge
-            </Typography>
+          New charge
+        </Typography>
         <form
               noValidate
               autoComplete="off"
@@ -58,7 +65,6 @@ class Form extends Component {
               <TextField
                 label="Total"
                 type="number"
-                value={total}
                 onChange={this.handleChangeTotal}
               />
               <TextField label="Description" onChange={this.handleChangeDescription} />
