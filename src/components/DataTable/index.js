@@ -14,11 +14,6 @@ import s from './DataTable.module.scss';
 // import data from '../../services/data';
 
 class DataTable extends Component {
-
-  // state = {
-  //   charges: [...data.charges],
-  // }
-
   createData = (category, description, date, total, actions) => {
     return { category, description, date, total, actions };
   }
