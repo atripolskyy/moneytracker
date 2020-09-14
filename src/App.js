@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div className={classes.root}>
+    <h1>Hello</h1>
       <Header />
       <Sidebar />
       <Content />
