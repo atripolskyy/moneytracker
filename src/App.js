@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div className={classes.root}>
-    <h1>Hello</h1>
       <Header />
+      <h1>Hello</h1>
       <Sidebar />
       <Content />
     </div>
