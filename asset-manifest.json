@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/moneytracker/static/css/main.9af31924.chunk.css",
+    "main.js": "/moneytracker/static/js/main.41632e3f.chunk.js",
+    "main.js.map": "/moneytracker/static/js/main.41632e3f.chunk.js.map",
+    "runtime-main.js": "/moneytracker/static/js/runtime-main.62da18d6.js",
+    "runtime-main.js.map": "/moneytracker/static/js/runtime-main.62da18d6.js.map",
+    "static/css/2.0b17412e.chunk.css": "/moneytracker/static/css/2.0b17412e.chunk.css",
+    "static/js/2.289e025b.chunk.js": "/moneytracker/static/js/2.289e025b.chunk.js",
+    "static/js/2.289e025b.chunk.js.map": "/moneytracker/static/js/2.289e025b.chunk.js.map",
+    "index.html": "/moneytracker/index.html",
+    "precache-manifest.c52160e55dc4d0562a8cdb0a20d2ecac.js": "/moneytracker/precache-manifest.c52160e55dc4d0562a8cdb0a20d2ecac.js",
+    "service-worker.js": "/moneytracker/service-worker.js",
+    "static/css/2.0b17412e.chunk.css.map": "/moneytracker/static/css/2.0b17412e.chunk.css.map",
+    "static/css/main.9af31924.chunk.css.map": "/moneytracker/static/css/main.9af31924.chunk.css.map",
+    "static/js/2.289e025b.chunk.js.LICENSE.txt": "/moneytracker/static/js/2.289e025b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/moneytracker/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2",
+    "static/media/500-normal.css": "/moneytracker/static/media/roboto-vietnamese-500-normal.16423fb4.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62da18d6.js",
+    "static/css/2.0b17412e.chunk.css",
+    "static/js/2.289e025b.chunk.js",
+    "static/css/main.9af31924.chunk.css",
+    "static/js/main.41632e3f.chunk.js"
+  ]
+}
