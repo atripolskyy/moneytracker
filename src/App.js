@@ -18,7 +18,6 @@ function App() {
   return (
     <div className={classes.root}>
       <Header />
-      <h1>Hello</h1>
       <Sidebar />
       <Content />
     </div>
