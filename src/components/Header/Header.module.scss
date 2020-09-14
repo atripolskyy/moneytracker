@@ -1,0 +1,30 @@
+.appBar {
+  z-index: 1200;
+}
+
+.menuButton {
+  // margin-right: theme.spacing(2),
+  // [theme.breakpoints.up('sm')]: {
+  //   display: 'none',
+  // }
+}
+
+.headerToolbar {
+  background-color: #263286;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: '200%';
+    height: '200%';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.25;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+.title {
+  flex-grow: 1;
+}
