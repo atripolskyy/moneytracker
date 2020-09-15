@@ -8,16 +8,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 
-// import Table from '@material-ui/core/Table';
-// import TableBody from '@material-ui/core/TableBody';
-// import TableCell from '@material-ui/core/TableCell';
-// import TableContainer from '@material-ui/core/TableContainer';
-// import TableHead from '@material-ui/core/TableHead';
-// import TableRow from '@material-ui/core/TableRow';
+import s from './SidebarBlock.module.scss';
 
-import s from './Sidebar.module.scss';
-
-class Sidebar extends Component {
+class SidebarBlock extends Component {
   render() {
     return (
       <Drawer
@@ -53,4 +46,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default SidebarBlock;
