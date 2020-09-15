@@ -7,9 +7,9 @@ import Badge from '@material-ui/core/Badge';
 import Typography from '@material-ui/core/Typography';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 
-import s from './Header.module.scss';
+import s from './HeaderBlock.module.scss';
 
-class Header extends Component {
+class HeaderBlock extends Component {
   render() {
     return (
       <AppBar position="fixed" className={s.appBar}>
@@ -31,4 +31,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default HeaderBlock;
