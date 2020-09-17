@@ -28,7 +28,7 @@ class HeaderBlock extends Component {
             </Badge>                     
           </IconButton>
           {/* add logout button route @markov */}
-          <NavLink to="/"> 
+          <NavLink to="/moneytracker"> 
             <IconButton color="inherit">
                 <ExitToAppIcon />
                 

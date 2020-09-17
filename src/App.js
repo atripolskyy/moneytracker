@@ -143,7 +143,7 @@ class App extends Component {
           <Router>
           <HeaderBlock />          
               <Switch>                      
-                <Route path="/" exact  component={AutorisationUser} >
+                <Route path="/moneytracker" exact  component={AutorisationUser} >
                   <AutorisationUser />
                 </Route>
                 <Route path="/home" exact component={ContentBlock}>
