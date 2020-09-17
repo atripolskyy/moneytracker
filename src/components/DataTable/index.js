@@ -37,7 +37,7 @@ class DataTable extends Component {
       this.props.item.map(row => createData(row.date, row.category, row.description, row.total, row.id))
       : [];
 
-    const {showMoneyForm, onDeleteMoney} = this.props;
+    const {showMoneyForm, onDeleteMoney, onSort} = this.props;
 
     return (
     <Grid item xs={12}>
@@ -45,11 +45,11 @@ class DataTable extends Component {
           <Table className={s.table} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Date</TableCell>
-                <TableCell>Category</TableCell>
-                <TableCell>Description</TableCell>
+                <TableCell onClick={ () => { onSort('date'); } } className={s.tableCell}>Date</TableCell>
+                <TableCell onClick={ () => { onSort('category'); } } className={s.tableCell}>Category</TableCell>
+                <TableCell onClick={ () => { onSort('description'); } } className={s.tableCell}>Description</TableCell>
 
-                <TableCell align="right">Money</TableCell>
+                <TableCell onClick={ () => { onSort('total'); } } align="right" className={s.tableCell}>Money</TableCell>
                 <TableCell align="right">Action</TableCell>
               </TableRow>
             </TableHead>

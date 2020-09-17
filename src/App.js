@@ -11,21 +11,21 @@ const dataList = [
     total: 13,
     category: 1,
     description: 'Dinner',
-    date: '01/01/2020',
+    date: '08/02/2020',
     id: 1,
   },
   {
     total: 110,
     category: 2,
     description: 'team building',
-    date: '02/01/2020',
+    date: '31/01/2019',
     id: 2,
   },
   {
-    total: 253,
+    total: 1000,
     category: 3,
     description: 'tickets',
-    date: '05/01/2020',
+    date: '05/08/2020',
     id: 3,
   },
   {
@@ -41,6 +41,8 @@ class App extends Component {
   state = {
     dataArr: dataList,
     isActiveMoneyForm: false,
+    order: 'asc',
+    sortedBy: 'id',
     // editMoneyId: null,
   }
 
@@ -110,6 +112,39 @@ class App extends Component {
     });
   }
 
+  handleSortTable = sortField => {
+    this.setState( ({dataArr}) => {
+      const dataToSort = this.state.dataArr.concat();
+      console.log(dataToSort);
+      const sortOrder = (this.state.order === 'asc') ? 'desc' : 'asc';
+
+      const sortedData = dataToSort.sort(function(prev, next) {
+        console.log(sortOrder);
+        switch(sortOrder){
+          case 'asc':
+            if (prev[sortField] > next[sortField]) return 1;
+            if (prev[sortField] == next[sortField]) return 0;
+            if (prev[sortField] < next[sortField]) return -1;
+            break;
+          case 'desc':
+            if (prev[sortField] < next[sortField]) return 1;
+            if (prev[sortField] == next[sortField]) return 0;
+            if (prev[sortField] > next[sortField]) return -1;
+            break;
+          default:
+            console.log('default');
+        }
+        
+      });
+      return {
+      dataArr: sortedData,
+      order: sortOrder,
+      sortedBy: sortField,
+      }
+    }
+    );
+  }
+
   render() {
     const { dataArr, isActiveMoneyForm } = this.state;
 
@@ -124,6 +159,7 @@ class App extends Component {
           isActiveMoneyForm={isActiveMoneyForm}
           // editMoneyId={editMoneyId}
           item={dataArr}
+          onSort={this.handleSortTable}
         />
       </div>
     );

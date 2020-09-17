@@ -57,8 +57,9 @@ class ContentBlock extends Component {
   }
 
 
+
   render() {
-    const { item, onAddMoney, onDeleteMoney, onShowMoneyForm, isActiveMoneyForm } = this.props;
+    const { item, onAddMoney, onDeleteMoney, onShowMoneyForm, isActiveMoneyForm, onSort } = this.props;
 
     return (
       <main className={s.pageContent}>
@@ -77,7 +78,7 @@ class ContentBlock extends Component {
             </Grid>
 
             {/* <DataTable item={item} onDeleteMoney={onDeleteMoney} showMoneyForm={onShowMoneyForm} /> */}
-            <DataTable item={item} onDeleteMoney={onDeleteMoney} showMoneyForm={this.getMoneyRowData} />
+            <DataTable item={item} onDeleteMoney={onDeleteMoney} showMoneyForm={this.getMoneyRowData} onSort={onSort}/>
 
           </Grid>
         </Container>
