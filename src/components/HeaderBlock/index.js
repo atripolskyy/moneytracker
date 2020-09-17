@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 
 import s from './HeaderBlock.module.scss';
+import {Link, NavLink} from 'react-router-dom' 
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 class HeaderBlock extends Component {
   render() {
@@ -22,10 +24,17 @@ class HeaderBlock extends Component {
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
-              <NotificationsNoneOutlinedIcon />
-            </Badge>
+              <NotificationsNoneOutlinedIcon />            
+            </Badge>                     
           </IconButton>
-        </Toolbar>
+          {/* add logout button route @markov */}
+          <NavLink to="/"> 
+            <IconButton color="inherit">
+                <ExitToAppIcon />
+                
+            </IconButton>
+          </NavLink>
+        </Toolbar>        
       </AppBar>
     );
   }
