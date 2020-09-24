@@ -5,7 +5,7 @@ import HeaderBlock from './components/HeaderBlock/index';
 import SidebarBlock from './components/SidebarBlock/index';
 import ContentBlock from './components/ContentBlock/index';
 // import { Router } from '@material-ui/icons'; // i don't know why it's there
-import Chart from "./components/Charts/charts"
+import Charts from "./components/Charts/charts"
 import AutorisationUser from "./components/Login/autorisationUser"
 
 
@@ -156,14 +156,10 @@ class App extends Component {
                       // editMoneyId={editMoneyId}
                       item={dataArr}
                     /> 
-                </Route>                      
-                {/* <myPieChart>
-                  <canvas id="myChart"></canvas>
-                </myPieChart> */}
-                {/* <Home /> */}    
-                  <Route path="/chart" exact component={Chart}>
-                  <SidebarBlock />
-                    <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom" />
+                </Route>                                                                    
+                  <Route path="/charts" exact component={Charts}>
+                  <SidebarBlock />               
+                    <Charts />                                              
                   </Route> 
             </Switch>                   
         </Router>                 

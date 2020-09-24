@@ -40,7 +40,7 @@ class SidebarBlock extends Component {
                 </ListItem>
               </NavLink>
 
-              <NavLink to="/chart">
+              <NavLink to="/charts">
                 <ListItem button>
                   <ListItemText
                     primary="Charts"

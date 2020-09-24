@@ -8,6 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import IconButton from '@material-ui/core/IconButton';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 
+
 export class Register extends React.Component {
 
     state = { 
@@ -25,7 +26,7 @@ export class Register extends React.Component {
         }
         reader.readAsDataURL(el.target.files[0])
     } 
-    
+
    
     render () { 
         const {profileImg} = this.state;
@@ -43,23 +44,27 @@ export class Register extends React.Component {
                             </IconButton>    
                         </label>                                   
                         </div>
-                        <div className="radio-gender">
+                        {/* <div className="radio-gender">
                         <FormControl component="fieldset">                  
                          <RadioGroup aria-label="gender" name="gender1" row>                        
                                 <FormControlLabel value="female" control={<Radio color="primary" />} label="Female" />
                                 <FormControlLabel value="male"  control={<Radio color="primary" />} label="Male" />
                         </RadioGroup>   
                         </FormControl>  
-                        </div>
+                        </div> */}
                     </div>
                     <div className="form">  
                         <div className="from-group">
                             <label htmlFor="username"></label>
-                            <input type="text" name = "username" placeholder="User name"/>
+                            <input type="text" name = "username" placeholder="User name" />
                         </div>
                         <div className="from-group">
                             <label htmlFor="password"></label>
-                            <input type="password" name = "password" placeholder="Password"/>
+                            <input type="password" name = "password" placeholder="Password" />
+                        </div>                       
+                        <div className="from-group">
+                            <label htmlFor="password"></label>
+                            <input type="tel" name = "phoneNumber" placeholder="Phone number" />
                         </div>                       
                     </div>
                 </div>
